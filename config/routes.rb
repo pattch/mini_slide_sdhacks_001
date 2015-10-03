@@ -54,6 +54,8 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  root 'pages#index'
   
   #->Prelang (user_login:devise/stylized_paths)
   devise_scope :user do
