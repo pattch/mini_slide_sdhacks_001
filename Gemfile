@@ -50,6 +50,9 @@ gem 'bootstrap-sass-extras'
 gem 'tzinfo-data'
 gem 'validates_formatting_of'
 
+# For uploading images and easily saving them
+gem 'paperclip'
+
 group :development do
   gem 'better_errors'
 end
