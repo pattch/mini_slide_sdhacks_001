@@ -1,28 +1,24 @@
-== README
+== PUNKT
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is a web application built with Ruby on Rails.
 
-Things you may want to cover:
+The motivation of this project was to improve on presentations by making them more interactive. 
+Presentations would be shared via a generated access code so that they can be seen on any device.
+Spectators would be able to access the presentation slides in real-time on their own devices, and focus more on the quality of content than on trying to obtain the information.
+As the presenter moves between lecture slides, the spectator's device reflects this change.
 
-* Ruby version
+What's Finished:
 
-* System dependencies
+Building Presentations
+--Uploading and saving images as Active Record objects using Paperclip
+--Adding Captions to Slides
+--Bundling Slides into a Presentation
 
-* Configuration
+Viewing Presentations
+--UI implemented using slick.js to transition between slides
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+About the Team
+--Sam Sampson  - Lead Developer; Full stack
+--Thomas Peev  - Project Manager; learned Ruby, Ruby on Rails environment
+--Judy Jun     - Front End Designer;learned Ruby, Ruby on Rails, API stuff
+--Beatrice Lee - Lead Designer and Photographer
