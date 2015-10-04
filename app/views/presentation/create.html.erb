@@ -1,2 +1,11 @@
-<h1> <%= @presentation.title %> </h1>
-<p> <%= link_to "Click to add a Slide", "/presentation/#{@presentation.id}/slide/new" %></p>
+<div class="content-container">
+    <div class="presentation create vertical-center">
+        <div class="content">
+            <h1> <%= @presentation.title %> </h1>
+            <span class="add-slide">
+              <%= link_to "Add a Slide", "/presentation/#{@presentation.id}/slide/new" %>
+            </span>
+        </div>
+        <%= link_to "BACK", "/presentation/new", :class => "return" %>
+    </div>
+</div>

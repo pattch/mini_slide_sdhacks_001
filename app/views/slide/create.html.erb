@@ -1,2 +1,10 @@
-<h1>Slide#create</h1>
-<p>Find me in app/views/slide/create.html.erb</p>
+<div class="content-container">
+    <div class="presentation create vertical-center">
+        <h1>Slide Created</h1>
+        <%= image_tag @slide.graphic.url %><br />
+        <div class="content">
+            <span class="add-slide"><%= link_to 'Add another slide', "/presentation/#{@pres_id}/slide/new" %></span>
+            <span class="add-slide"><%= link_to 'View Presentation', "/presentation/#{@pres_id}" %></span>
+        </div>
+    </div>
+</div>

@@ -1,3 +1,147 @@
 // Place all the styles related to the Presentation controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'compass/css3';
+
+.presentation {
+
+  &.create {
+    text-align:center;
+    position:relative;
+    @include appearance(none);
+
+    h1 {
+      font-size:1.8em;
+    }
+
+    img {
+      max-width: 300px;
+      margin-bottom: 4em;
+    }
+
+    $faded: rgba(255, 255, 255, 0.6);
+    $full: rgba(248, 148, 6, 0.9);
+
+    .content {
+      margin-bottom: 10em;
+
+      input,
+      .add-slide {
+        background: none;
+        padding: 1em 2em;
+        margin: 4em 1.5em;
+        @include transition(all 0.2s ease-in-out);
+      }
+
+      input[type="submit"],
+      .add-slide {
+        @include border-radius(2em);
+        border: 1px solid $faded;
+        color: $faded;
+
+        &:hover {
+          border: 1px solid $full;
+          text-decoration:none;
+          color: $full;
+        }
+      }
+
+      input[type="text"] {
+        border: none;
+        border-bottom: 2px solid $faded;
+      }
+
+      input[type="file"] {
+        display:inline-block;
+        border: 1px solid $faded;
+      }
+
+      .add-slide {
+        display:inline-block;
+
+        a {
+          color: $faded;
+          @include transition(all 0.2s ease-in-out);
+
+          &:hover {
+            color: $full;
+            text-decoration: none;
+          }
+        }
+
+        &:hover {
+
+          a {
+            color: $full;
+          }
+        }
+      }
+    }
+  }
+
+  &.show {
+
+    $dark: #222;
+    h1 {
+      text-align: center;
+      font-size:1.5em;
+      background-color: $dark;
+      max-width: 80%;
+      margin: 0 auto;
+      padding:1em 0;
+      -webkit-border-top-left-radius: 1em;
+      -webkit-border-top-right-radius: 1em;
+      -moz-border-radius-topleft: 1em;
+      -moz-border-radius-topright: 1em;
+      border-top-left-radius: 1em;
+      border-top-right-radius: 1em;
+    }
+
+    .slides-container {
+      max-width:80%;
+      margin:0 auto;
+      position:relative;
+      text-align:center;
+      background-color: $dark;
+      padding-bottom:0.5em;
+      -webkit-border-bottom-right-radius: 1em;
+      -webkit-border-bottom-left-radius: 1em;
+      -moz-border-radius-bottomright: 1em;
+      -moz-border-radius-bottomleft: 1em;
+      border-bottom-right-radius: 1em;
+      border-bottom-left-radius: 1em;
+
+      .control {
+        width: 10%;
+        text-align:center;
+        display:inline;
+        height:100%;
+
+        &#prev-control {
+          position:absolute;
+          left:0;
+        }
+
+        &#next-control {
+          position:absolute;
+          right:0;
+        }
+      }
+
+      .graphic {
+        max-width: 100%;
+        max-height: 100%;
+
+        img {
+          max-width:inherit;
+          height:720px;
+          margin:0 auto;
+        }
+      }
+
+      p {
+        margin: 2em 0;
+      }
+    }
+  }
+}

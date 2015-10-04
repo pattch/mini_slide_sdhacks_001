@@ -1,2 +1,15 @@
-<h1>Presentation#show</h1>
-<p>Find me in app/views/presentation/show.html.erb</p>
+<div class="content-container">
+    <div class="presentation show">
+        <h1> <%= @presentation.title %> </h1>
+        <div class="slides-container">
+            <% @presentation.slides.each do |s| %>
+                <div class="slide">
+                    <div class="graphic">
+                      <%= image_tag s.graphic.url %>
+                    </div>
+                    <p> <%= s.caption %> </p>
+                </div>
+            <% end %>
+        </div>
+    </div>
+</div>

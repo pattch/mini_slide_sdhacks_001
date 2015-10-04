@@ -8,6 +8,7 @@ class PresentationController < ApplicationController
   end
 
   def show
+    @presentation = Presentation.includes(:slides).find( params[:id] )
   end
 
   def index

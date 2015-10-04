@@ -154,6 +154,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="slick" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionmailer (v4.1.4, rbenv: 2.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionpack (v4.1.4, rbenv: 2.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionview (v4.1.4, rbenv: 2.2.2) [gem]" level="application" />
@@ -189,6 +190,7 @@
     <orderEntry type="library" scope="PROVIDED" name="i18n (v0.7.0, rbenv: 2.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.3.2, rbenv: 2.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jquery-rails (v3.1.4, rbenv: 2.2.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="jquery-slick-rails (v1.5.8, rbenv: 2.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="json (v1.8.3, rbenv: 2.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jwt (v1.5.1, rbenv: 2.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.5.4, rbenv: 2.2.2) [gem]" level="application" />

@@ -1,4 +1,13 @@
-<%= form_for :presentation, :url => '/presentation/create' do |f| %>
-    <%= f.text_field :title %>
-    <%= f.submit "Set Title" %>
-<% end %>
+<div class="content-container">
+    <div class="presentation create vertical-center">
+          <h1>What would you like to name your presentation?</h1>
+          <div class="content">
+              <%= form_for :presentation, :url => '/presentation/create' do |f| %>
+                  <%= f.text_field :title %>
+                  <%= f.submit "Set Title", :class => "rounded"%>
+              <% end %>
+          </div>
+
+          <%= link_to "BACK", root_url, :class => "return" %>
+    </div>
+</div>

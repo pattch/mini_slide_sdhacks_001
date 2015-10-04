@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151003193205) do
+ActiveRecord::Schema.define(version: 20151004061553) do
 
   create_table "presentations", force: true do |t|
     t.datetime "created_at"
@@ -27,7 +27,10 @@ ActiveRecord::Schema.define(version: 20151003193205) do
     t.integer  "graphic_file_size"
     t.datetime "graphic_updated_at"
     t.string   "caption"
+    t.integer  "presentation_id"
   end
+
+  add_index "slides", ["presentation_id"], name: "index_slides_on_presentation_id"
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false

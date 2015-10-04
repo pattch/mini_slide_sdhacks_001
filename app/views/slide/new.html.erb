@@ -1,2 +1,13 @@
-<h1>Slide#new</h1>
-<p>Find me in app/views/slide/new.html.erb</p>
+<div class="content-container">
+    <div class="presentation create vertical-center">
+        <h1> <%= @presentation.title %> </h1>
+
+        <div class="content">
+            <%= form_for :slide, :url => "/presentation/#{@pres_id}/slide/create" do |f| %>
+                <%= f.file_field :graphic %><br />
+                <%= f.text_field :caption, :value => "Add a caption..." %><br />
+                <%= f.submit "Create Slide" %>
+            <% end %>
+        </div>
+    </div>
+</div>

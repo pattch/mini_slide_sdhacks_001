@@ -21,6 +21,11 @@
 
 @import "compass/css3";
 
+@import 'slick';
+@import 'slick-theme';
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
 //->Prelang (ui_framework:twitter_bootstrap)
 
 // Give everything in 'yield' margin to separate it.
@@ -46,4 +51,22 @@
 .dark {
   background-color: $dark-bg;
   color: $alt-font;
+}
+
+.vertical-center {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.content-container {
+  position:absolute;
+  width:100%;
+  height: 90%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: image-url('footer_lodyas.png');
 }
