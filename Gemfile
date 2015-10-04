@@ -53,6 +53,9 @@ gem 'validates_formatting_of'
 # For uploading images and easily saving them
 gem 'paperclip'
 
+# For better Styling
+gem 'compass-rails'
+
 group :development do
   gem 'better_errors'
 end

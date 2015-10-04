@@ -11,7 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151003082110) do
+ActiveRecord::Schema.define(version: 20151003193205) do
+
+  create_table "presentations", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "title"
+  end
 
   create_table "slides", force: true do |t|
     t.datetime "created_at"
@@ -20,6 +26,7 @@ ActiveRecord::Schema.define(version: 20151003082110) do
     t.string   "graphic_content_type"
     t.integer  "graphic_file_size"
     t.datetime "graphic_updated_at"
+    t.string   "caption"
   end
 
   create_table "users", force: true do |t|

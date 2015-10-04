@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  get 'presentation/index'
+
+  get 'presentation/show'
+
+  get 'presentation/new'
+
+  get 'presentation/create'
+
+  get 'slide/new'
+
+  get 'slide/edit'
+
   get 'slide/create'
 
   get 'slide/show'
@@ -66,6 +78,17 @@ Rails.application.routes.draw do
   #   end
 
   root 'pages#index'
+
+  get "presentation/new"                =>  "presentation#new"
+  post "presentation/create"            =>  "presentation#create"
+  get "presentation/:id/slide/new"      =>  "slide#new"
+  post "presentation/:id/slide/create"  =>  "slide#create"
+  get  "presentation/:id"               =>  "presentation#show"
+  get "presentation"                    =>  "presentation#index"
+
+  get "slide"                           =>  "slide#index"
+
+
   
   #->Prelang (user_login:devise/stylized_paths)
   devise_scope :user do
