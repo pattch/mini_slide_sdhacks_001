@@ -1,5 +1,10 @@
-<h1> Presentations </h1>
-
-<%= @presentations.each do |p| %>
-    <p> <%= p.inspect %> </p>
-<% end %>
+<div class="content-container">
+  <div class="presentation create">
+    <% @presentations.reverse_order.each do |p| %>
+        <div class="presentation">
+            <h2> <%= p.title %> </h2>
+            <%= link_to "View Presentation", "/presentation/#{p.id}" %>
+        </div>
+    <% end %>
+  </div>
+</div>

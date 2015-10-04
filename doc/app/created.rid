@@ -1,0 +1,16 @@
+Sun, 04 Oct 2015 10:11:23 -0700
+README.rdoc	Fri, 02 Oct 2015 12:08:17 -0700
+app/controllers/application_controller.rb	Fri, 02 Oct 2015 20:42:12 -0700
+app/controllers/pages_controller.rb	Sat, 03 Oct 2015 02:14:47 -0700
+app/controllers/presentation_controller.rb	Sat, 03 Oct 2015 23:21:11 -0700
+app/controllers/slide_controller.rb	Sun, 04 Oct 2015 05:44:58 -0700
+app/controllers/users/passwords_controller.rb	Fri, 02 Oct 2015 12:08:17 -0700
+app/controllers/users/registrations_controller.rb	Fri, 02 Oct 2015 12:08:17 -0700
+app/controllers/users/sessions_controller.rb	Fri, 02 Oct 2015 12:08:17 -0700
+app/helpers/application_helper.rb	Fri, 02 Oct 2015 12:08:17 -0700
+app/helpers/pages_helper.rb	Fri, 02 Oct 2015 21:01:59 -0700
+app/helpers/presentation_helper.rb	Sat, 03 Oct 2015 12:04:12 -0700
+app/helpers/slide_helper.rb	Sat, 03 Oct 2015 01:32:14 -0700
+app/models/presentation.rb	Sat, 03 Oct 2015 12:20:54 -0700
+app/models/slide.rb	Sat, 03 Oct 2015 12:19:55 -0700
+app/models/user.rb	Fri, 02 Oct 2015 12:08:17 -0700
